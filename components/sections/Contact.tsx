@@ -9,7 +9,7 @@ type ContactProps = {
   company: CompanyData;
 };
 
-/** Contact details on the left, the appointment form in a card on the right (the website's Contact Us and Book Appointment pages in one) */
+/** Contact details on the left, the contact form in a card on the right (the website's Contact Us page) */
 export const Contact = ({ data: contact, form, company }: ContactProps) => {
   if (!contact) return null;
 
@@ -19,19 +19,19 @@ export const Contact = ({ data: contact, form, company }: ContactProps) => {
         <div className="flex min-w-0 flex-col">
           <SectionHeading label={contact.label} title={contact.title} description={contact.description} />
 
-          {/* the four cards share the height left beside the form, so both columns start and end level */}
-          <ul data-reveal className="mt-5 grid flex-1 auto-rows-fr grid-cols-2 gap-3 lg:mt-6 lg:gap-4">
+          {/* one card per row on phones and tablets (two side by side between 640 and 767px); on desktop the four cards share the height left beside the form, so both columns end level */}
+          <ul data-reveal className="mt-5 grid flex-1 gap-2.5 sm:auto-rows-fr sm:grid-cols-2 sm:gap-3 md:grid-cols-1 lg:mt-6 lg:grid-cols-2 lg:gap-4">
             {company.contactInfo.map((item) => {
               const external = item.href.startsWith("http");
               // the free consultation note has no link; it shows as a navy card so the offer stands out
               const note = !item.href;
-              const card = `flex h-full flex-col border p-3 sm:p-4 lg:p-5 ${
+              const card = `flex h-full items-start gap-3.5 border p-4 sm:flex-col sm:gap-0 md:flex-row md:gap-3.5 lg:flex-col lg:gap-0 lg:p-5 ${
                 note ? "border-[var(--color-navy)] bg-[var(--color-navy)]" : "border-[var(--color-border)]"
               }`;
               const body = (
                 <>
-                  <Icon name={item.icon} className="size-6 shrink-0 text-[var(--color-primary)]" />
-                  <span className="mt-3 min-w-0">
+                  <Icon name={item.icon} className="mt-0.5 size-6 shrink-0 text-[var(--color-primary)] sm:mt-0 md:mt-0.5 lg:mt-0" />
+                  <span className="min-w-0 sm:mt-3 md:mt-0 lg:mt-3">
                     <span
                       className={`block font-display text-lg font-semibold transition-colors ${
                         note ? "text-[var(--color-white)]" : "text-[var(--color-heading)] group-hover:text-[var(--color-primary-strong)]"

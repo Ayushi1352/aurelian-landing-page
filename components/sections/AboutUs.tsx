@@ -10,12 +10,17 @@ export const AboutUs = ({ data: about }: { data?: AboutUsData }) => {
   return (
     <section className="bg-[var(--color-bg-main)] py-[var(--section-gap)]">
       <div className="mx-auto grid max-w-7xl gap-6 px-4 sm:px-6 lg:grid-cols-[1fr_1.15fr] lg:items-center lg:gap-16 lg:px-8">
-        <div data-reveal className="relative h-44 overflow-hidden sm:h-72 lg:h-[33rem]">
-          <Image quality={90} src={about.image.src} alt={about.image.alt} fill sizes="(min-width: 1024px) 560px, 92vw" className="object-cover" />
-          {/* years of practice, in a navy tag on the photo */}
-          <p className="absolute bottom-0 left-0 bg-[var(--color-navy)] px-4 py-3 sm:px-6 sm:py-4">
-            <span className="block font-display text-3xl font-semibold leading-none text-[var(--color-primary-light)] sm:text-[2.5rem]">{about.badge.value}</span>
-            <span className="mt-1 block text-xs text-[var(--color-white-85)] sm:text-sm">{about.badge.label}</span>
+        <div data-reveal className="relative">
+          <div className="relative h-44 overflow-hidden sm:h-72 lg:h-[33rem]">
+            <Image quality={90} src={about.image.src} alt={about.image.alt} fill sizes="(min-width: 1024px) 560px, 92vw" className="object-cover" />
+          </div>
+          {/*
+            years of practice: a navy tag on the photo on desktop; on phones and tablets the photo is short and the
+            faces fill it, so the tag sits as a strip under the photo instead of covering them
+          */}
+          <p className="flex items-center gap-3 bg-[var(--color-navy)] px-4 py-2.5 sm:px-5 sm:py-3 lg:absolute lg:bottom-0 lg:left-0 lg:block lg:px-6 lg:py-4">
+            <span className="block font-display text-[1.75rem] font-semibold leading-none text-[var(--color-primary-light)] lg:text-[2.5rem]">{about.badge.value}</span>
+            <span className="block text-xs text-[var(--color-white-85)] sm:text-sm lg:mt-1">{about.badge.label}</span>
           </p>
         </div>
 

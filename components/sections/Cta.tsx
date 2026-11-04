@@ -2,7 +2,7 @@ import type { CtaData } from "@/types/templates.types";
 import { SectionLabel } from "@/components/ui/SectionHeading";
 import { buttonGold } from "@/components/ui/button";
 
-/** Plain navy band under the team, leading down to the booking form */
+/** Plain navy band under the team, leading down to the contact form */
 export const Cta = ({ data: cta }: { data?: CtaData }) => {
   if (!cta) return null;
 

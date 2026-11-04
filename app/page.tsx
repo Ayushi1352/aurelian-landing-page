@@ -13,8 +13,8 @@ const sectionData = templateData.categories.Legal.sections;
 const commonData = templateData.common;
 
 /*
-  One landing page with a section for each page of the Aurelian Legal website (no blog). Book Appointment
-  is merged into the contact section.
+  One landing page with a section for each page of the Aurelian Legal website (no blog, no Book Appointment
+  page): every button leads to the Contact Us form in the contact section.
   The ids match the header and footer links in templates.json ("#about" → id="about"); scroll-mt keeps
   each section clear of the fixed header when a link scrolls to it.
 */

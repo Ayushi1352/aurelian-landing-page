@@ -1,11 +1,11 @@
 import type { IconType } from "react-icons";
 import { FaRegCircle } from "react-icons/fa";
 import {
+  LuArrowLeft,
   LuArrowRight,
   LuAward,
   LuCalendarCheck,
   LuCheck,
-  LuChevronDown,
   LuHeartHandshake,
   LuMail,
   LuMapPin,
@@ -19,11 +19,11 @@ import { RiFacebookFill, RiInstagramLine, RiLinkedinFill, RiTwitterXLine, RiYout
 
 // Every icon the site can use, by the name templates.json stores. A new icon is added here once.
 const icons: Record<string, IconType> = {
+  LuArrowLeft,
   LuArrowRight,
   LuAward,
   LuCalendarCheck,
   LuCheck,
-  LuChevronDown,
   LuHeartHandshake,
   LuMail,
   LuMapPin,

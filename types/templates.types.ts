@@ -121,7 +121,6 @@ export interface WhyChooseUsData {
   label: string;
   title: HeadingPart[];
   description: string;
-  image: ImageData;
   items: WhyChooseItem[];
   button: LinkData;
 }
@@ -129,6 +128,7 @@ export interface WhyChooseUsData {
 export interface PracticeCard {
   title: string;
   subtitle: string;
+  text: string;
   image: string;
 }
 
@@ -138,6 +138,8 @@ export interface PracticeAreasData {
   description: string;
   cardButton: string;
   cardLink: string;
+  previousLabel: string;
+  nextLabel: string;
   cards: PracticeCard[];
 }
 
@@ -176,13 +178,9 @@ export interface EnquiryFormData {
     name: string;
     email: string;
     phone: string;
-    practiceArea: string;
-    date: string;
-    time: string;
-    details: string;
+    subject: string;
+    message: string;
   };
-  practiceOptions: string[];
-  timeOptions: string[];
   button: string;
   sending: string;
   successTitle: string;

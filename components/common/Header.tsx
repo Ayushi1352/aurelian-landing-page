@@ -51,7 +51,7 @@ export const Header = ({ data, ui }: HeaderProps) => {
 
   if (!data) return null;
   const { brand, cta } = data;
-  // the "Book Appointment" button already leads to the contact section, so its link is left out of both menus
+  // the "Contact Us" button already leads to the contact section, so its link is left out of both menus
   const menuLinks = links.filter((link) => link.href !== cta.href);
 
   /** The logo scrolls back to the top and drops any "#section" from the address bar, without reloading the page */
@@ -105,15 +105,24 @@ export const Header = ({ data, ui }: HeaderProps) => {
         </div>
       </div>
 
+      {/* dims the page under the open menu; tapping it closes the menu */}
+      <div
+        aria-hidden="true"
+        onClick={() => setOpen(false)}
+        className={`fixed inset-x-0 bottom-0 top-[4.5rem] bg-[var(--color-menu-backdrop)] transition-opacity duration-300 lg:hidden ${
+          open ? "opacity-100" : "pointer-events-none invisible opacity-0"
+        }`}
+      />
+
       <nav
         id="mobile-menu"
         aria-label={ui.mobileNav}
-        // when open it fills the screen below the header, so the page behind it does not show through
-        className={`overflow-y-auto bg-[var(--color-bg-main)] transition-[height,opacity] duration-300 lg:hidden ${
-          open ? "h-[calc(100dvh-4.5rem)] opacity-100" : "pointer-events-none invisible h-0 opacity-0"
+        // when open it is only as tall as its links (and scrolls if they do not fit on a short screen)
+        className={`relative grid max-h-[calc(100dvh-4.5rem)] overflow-hidden bg-[var(--color-bg-main)] transition-[grid-template-rows,opacity] duration-300 lg:hidden ${
+          open ? "grid-rows-[1fr] opacity-100" : "pointer-events-none invisible grid-rows-[0fr] opacity-0"
         }`}
       >
-        <ul className="mx-auto flex max-w-7xl flex-col px-4 py-4 sm:px-6">
+        <ul className="mx-auto flex min-h-0 w-full max-w-7xl flex-col overflow-y-auto px-4 pt-2 sm:px-6 [&>li:last-child]:pb-4">
           {menuLinks.map((link) => (
             <li key={link.href}>
               <a
