@@ -1,26 +1,69 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --font-primary: Arial, sans-serif;
+  --font-heading: Georgia, serif;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* Aurelian theme (navy and gold, from the Aurelian Legal logo) */
+  /* Brand */
+  --color-primary: #b8955a;
+  --color-primary-light: #dcc394;
+  /* darker gold for small text on light backgrounds, so it stays readable */
+  --color-primary-strong: #8a6a33;
+  --color-navy: #14213d;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Text */
+  --color-heading: #121a2b;
+  --color-text: #4f5566;
+  --color-text-muted: #5f6474;
+  --color-text-placeholder: #868b97;
+  --color-white: #ffffff;
+
+  /* Backgrounds and borders */
+  --color-bg-main: #ffffff;
+  --color-bg-alt: #f5f3ee;
+  --color-bg-dark: #0f1a31;
+  --color-bg-deep: #0a1222;
+  /* Shown on both sides of the page when the screen is wider than 1920px (or the browser is zoomed out). */
+  --color-bg-backdrop: #f5f5f5;
+  --color-border: #e3e0d9;
+
+  /* Overlays */
+  --color-primary-70: rgba(184, 149, 90, 0.7);
+  --color-hero-overlay: rgba(10, 18, 34, 0.78);
+  --color-hero-overlay-mid: rgba(10, 18, 34, 0.7);
+  --color-hero-overlay-end: rgba(10, 18, 34, 0.05);
+  --color-card-overlay: rgba(10, 18, 34, 0.9);
+  --color-card-overlay-end: rgba(10, 18, 34, 0);
+  --color-white-8: rgba(255, 255, 255, 0.08);
+  --color-white-10: rgba(255, 255, 255, 0.1);
+  --color-white-20: rgba(255, 255, 255, 0.2);
+  --color-white-70: rgba(255, 255, 255, 0.7);
+  --color-white-85: rgba(255, 255, 255, 0.85);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-primary);
+  color: var(--color-text);
+  background-color: var(--color-bg-backdrop);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+::selection {
+  background-color: var(--color-navy);
+  color: var(--color-white);
 }

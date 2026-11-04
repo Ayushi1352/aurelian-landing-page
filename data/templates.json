@@ -1,0 +1,532 @@
+{
+  "common": {
+    "theme": {
+      "fonts": {
+        "primary": "var(--font-nunito-sans), Arial, sans-serif",
+        "heading": "var(--font-cormorant-infant), Georgia, serif"
+      }
+    },
+    "metadata": {
+      "title": "Aurelian Legal | Legal Advocates & Consultants",
+      "description": "A full-service law firm giving steadfast counsel to individuals, families and businesses since 2001.",
+      "lang": "en"
+    },
+    "globalUI": {
+      "mainNav": "Main navigation",
+      "mobileNav": "Mobile navigation",
+      "openMenu": "Open menu",
+      "closeMenu": "Close menu",
+      "backToTop": "Aurelian Legal - back to top"
+    },
+    "company": {
+      "contactInfo": [
+        {
+          "icon": "LuMapPin",
+          "title": "Visit",
+          "lines": [
+            "245 Park Avenue, Suite 1200,",
+            "New York, NY 10167, USA"
+          ],
+          "href": "https://www.google.com/maps/search/?api=1&query=245%20Park%20Avenue%2C%20Suite%201200%2C%20New%20York%2C%20NY%2010167%2C%20USA"
+        },
+        {
+          "icon": "LuPhone",
+          "title": "Call",
+          "lines": [
+            "+1 0000000000"
+          ],
+          "href": "tel:+10000000000"
+        },
+        {
+          "icon": "LuMail",
+          "title": "Write",
+          "lines": [
+            "info@xyz.com"
+          ],
+          "href": "mailto:info@xyz.com"
+        },
+        {
+          "icon": "LuCalendarCheck",
+          "title": "Free Consultation",
+          "lines": [
+            "Free first consultation for new clients"
+          ],
+          "href": ""
+        }
+      ],
+      "socialLinks": [
+        {
+          "id": "facebook",
+          "icon": "RiFacebookFill",
+          "label": "Facebook",
+          "url": "https://www.facebook.com/"
+        },
+        {
+          "id": "instagram",
+          "icon": "RiInstagramLine",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/"
+        },
+        {
+          "id": "linkedin",
+          "icon": "RiLinkedinFill",
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/"
+        },
+        {
+          "id": "x",
+          "icon": "RiTwitterXLine",
+          "label": "X",
+          "url": "https://x.com/"
+        },
+        {
+          "id": "youtube",
+          "icon": "RiYoutubeFill",
+          "label": "YouTube",
+          "url": "https://www.youtube.com/"
+        }
+      ]
+    },
+    "Footer": {
+      "logo": {
+        "src": "/images/logo-light.webp",
+        "width": 1383,
+        "height": 312,
+        "alt": "Aurelian Legal"
+      },
+      "tagline": "A full-service law firm giving steadfast counsel to individuals, families and businesses since 2001.",
+      "menuTitle": "Quick Links",
+      "contactTitle": "Contact",
+      "copyright": "© {year} Aurelian Legal. All Rights Reserved. Powered by Lestow."
+    }
+  },
+  "categories": {
+    "Legal": {
+      "sections": {
+        "Header": {
+          "variants": {
+            "LegalHeader1": {
+              "brand": {
+                "name": "Aurelian Legal",
+                "logo": {
+                  "src": "/images/logo.webp",
+                  "alt": "Aurelian Legal Advocates",
+                  "width": 1383,
+                  "height": 312
+                }
+              },
+              "navigation": [
+                {
+                  "label": "Home",
+                  "href": "#home"
+                },
+                {
+                  "label": "About Us",
+                  "href": "#about"
+                },
+                {
+                  "label": "Practice Areas",
+                  "href": "#practice-areas"
+                },
+                {
+                  "label": "Our Team",
+                  "href": "#team"
+                },
+                {
+                  "label": "Contact Us",
+                  "href": "#contact"
+                }
+              ],
+              "cta": {
+                "label": "Book Appointment",
+                "href": "#contact"
+              }
+            }
+          }
+        },
+        "Hero": {
+          "variants": {
+            "LegalHero1": {
+              "title": "Justice With Integrity.",
+              "description": "A full-service law firm giving steadfast counsel to individuals, families and businesses since 2001.",
+              "button": {
+                "label": "Book Appointment",
+                "href": "#contact"
+              },
+              "image": {
+                "src": "/images/hero.webp",
+                "alt": "Bronze statue of Lady Justice holding the scales and a sword"
+              }
+            }
+          }
+        },
+        "AboutUs": {
+          "variants": {
+            "LegalAboutUs1": {
+              "label": "About Aurelian",
+              "title": [
+                {
+                  "text": "A passion to excel, ",
+                  "highlight": false
+                },
+                {
+                  "text": "a promise to protect.",
+                  "highlight": true
+                }
+              ],
+              "description": "Forty advocates, one promise - personal attention on every matter. From a two-lawyer chamber in 2001 to forty advocates across nine practice areas, one standard of care has never changed.",
+              "points": [
+                {
+                  "title": "Our Mission",
+                  "text": "Excellent legal counsel - accessible, transparent and focused on your outcome."
+                },
+                {
+                  "title": "Our Vision",
+                  "text": "The firm clients trust first, known for preparation, honesty and results."
+                }
+              ],
+              "image": {
+                "src": "/images/about-team-meeting.webp",
+                "alt": "Aurelian advocates working together at a conference table"
+              },
+              "badge": {
+                "value": "25+",
+                "label": "Years of trusted practice"
+              },
+              "stats": [
+                {
+                  "value": "1,200+",
+                  "label": "Cases won"
+                },
+                {
+                  "value": "98%",
+                  "label": "Client satisfaction"
+                },
+                {
+                  "value": "25+",
+                  "label": "Years of experience"
+                },
+                {
+                  "value": "40+",
+                  "label": "Legal experts"
+                }
+              ]
+            }
+          }
+        },
+        "WhyChooseUs": {
+          "variants": {
+            "LegalWhyChooseUs1": {
+              "label": "Why Choose Us",
+              "title": [
+                {
+                  "text": "You can trust ",
+                  "highlight": false
+                },
+                {
+                  "text": "our team.",
+                  "highlight": true
+                }
+              ],
+              "description": "Preparation, honesty and results - at every important moment. Four principles behind every case.",
+              "image": {
+                "src": "/images/why-advocate.webp",
+                "alt": "An advocate in a black coat in a law library"
+              },
+              "items": [
+                {
+                  "title": "Quality",
+                  "text": "Meticulous preparation and careful drafting on every single file.",
+                  "icon": "LuAward"
+                },
+                {
+                  "title": "Experience",
+                  "text": "Decades of practice in court, in arbitration and at the negotiating table.",
+                  "icon": "LuScale"
+                },
+                {
+                  "title": "Integrity",
+                  "text": "Honest advice about your chances - even when it is not what you hoped to hear.",
+                  "icon": "LuShieldCheck"
+                },
+                {
+                  "title": "Dedication",
+                  "text": "A lawyer who knows your name, returns your calls and sees the matter through.",
+                  "icon": "LuHeartHandshake"
+                }
+              ],
+              "button": {
+                "label": "Book a Consultation",
+                "href": "#contact"
+              }
+            }
+          }
+        },
+        "PracticeAreas": {
+          "variants": {
+            "LegalPracticeAreas1": {
+              "label": "Practice Areas",
+              "title": [
+                {
+                  "text": "Expertise built ",
+                  "highlight": false
+                },
+                {
+                  "text": "around you.",
+                  "highlight": true
+                }
+              ],
+              "description": "Nine practice areas, one standard of care. Specialist counsel for individuals, families and businesses.",
+              "cardButton": "Book a consultation",
+              "cardLink": "#contact",
+              "cards": [
+                {
+                  "title": "Dispute Resolution",
+                  "subtitle": "Litigation & Arbitration",
+                  "image": "/images/practice-dispute-resolution.webp"
+                },
+                {
+                  "title": "Criminal Defence",
+                  "subtitle": "Conventional & Economic Offences",
+                  "image": "/images/practice-criminal-defence.webp"
+                },
+                {
+                  "title": "Corporate & Contracts",
+                  "subtitle": "Contracting & Transaction Law",
+                  "image": "/images/practice-corporate-contracts.webp"
+                },
+                {
+                  "title": "Insolvency & Bankruptcy",
+                  "subtitle": "Restructuring & Recovery",
+                  "image": "/images/practice-insolvency.webp"
+                },
+                {
+                  "title": "Employment & Labour Law",
+                  "subtitle": "Employers & Employees",
+                  "image": "/images/practice-employment-law.webp"
+                },
+                {
+                  "title": "Intellectual Property",
+                  "subtitle": "Trademark, Copyright & Data",
+                  "image": "/images/practice-intellectual-property.webp"
+                },
+                {
+                  "title": "Immigration Law",
+                  "subtitle": "Visas & Business Establishment",
+                  "image": "/images/practice-immigration.webp"
+                },
+                {
+                  "title": "Family & Private Client",
+                  "subtitle": "Families, Wills & Estates",
+                  "image": "/images/practice-family-private-client.webp"
+                },
+                {
+                  "title": "Start-up Advisory",
+                  "subtitle": "Founders & Emerging Companies",
+                  "image": "/images/practice-startup-advisory.webp"
+                }
+              ]
+            }
+          }
+        },
+        "Team": {
+          "variants": {
+            "LegalTeam1": {
+              "label": "Our Advocates",
+              "title": [
+                {
+                  "text": "Leadership & ",
+                  "highlight": false
+                },
+                {
+                  "text": "key members.",
+                  "highlight": true
+                }
+              ],
+              "description": "Meet the partners and associates who will stand beside you.",
+              "members": [
+                {
+                  "name": "Rajesh Malhotra",
+                  "role": "Founder & Managing Partner",
+                  "image": "/images/team-rajesh-malhotra.webp"
+                },
+                {
+                  "name": "Anjali Mehta",
+                  "role": "Co-Founder & Senior Partner",
+                  "image": "/images/team-anjali-mehta.webp"
+                },
+                {
+                  "name": "Vikram Singh",
+                  "role": "Senior Partner",
+                  "image": "/images/team-vikram-singh.webp"
+                },
+                {
+                  "name": "Priya Sharma",
+                  "role": "Senior Partner",
+                  "image": "/images/team-priya-sharma.webp"
+                },
+                {
+                  "name": "Arjun Verma",
+                  "role": "Partner",
+                  "image": "/images/team-arjun-verma.webp"
+                },
+                {
+                  "name": "Neha Iyer",
+                  "role": "Partner",
+                  "image": "/images/team-neha-iyer.webp"
+                },
+                {
+                  "name": "Rohan Gupta",
+                  "role": "Senior Associate",
+                  "image": "/images/team-rohan-gupta.webp"
+                },
+                {
+                  "name": "Kavya Reddy",
+                  "role": "Senior Associate",
+                  "image": "/images/team-kavya-reddy.webp"
+                },
+                {
+                  "name": "Aditya Joshi",
+                  "role": "Associate",
+                  "image": "/images/team-aditya-joshi.webp"
+                },
+                {
+                  "name": "Sneha Nair",
+                  "role": "Associate",
+                  "image": "/images/team-sneha-nair.webp"
+                }
+              ]
+            }
+          }
+        },
+        "Cta": {
+          "variants": {
+            "LegalCta1": {
+              "label": "Free Initial Consultation",
+              "title": "Looking for help from a lawyer?",
+              "description": "Your first consultation is free for new clients. A senior lawyer reviews your details before you meet.",
+              "button": {
+                "label": "Book Appointment",
+                "href": "#contact"
+              }
+            }
+          }
+        },
+        "Contact": {
+          "variants": {
+            "LegalContact1": {
+              "label": "Get in Touch",
+              "title": [
+                {
+                  "text": "Let's talk about ",
+                  "highlight": false
+                },
+                {
+                  "text": "your matter.",
+                  "highlight": true
+                }
+              ],
+              "description": "We respond within one business day. Everything you share is kept strictly confidential.",
+              "form": {
+                "title": "Book a Consultation",
+                "description": "A senior lawyer reviews your details before you meet."
+              }
+            }
+          }
+        },
+        "EnquiryForm": {
+          "variants": {
+            "LegalEnquiryForm1": {
+              "fields": {
+                "name": "Full Name*",
+                "email": "Email Address*",
+                "phone": "Phone Number*",
+                "practiceArea": "Practice Area*",
+                "date": "Preferred Date*",
+                "time": "Preferred Time*",
+                "details": "Brief description of your matter"
+              },
+              "practiceOptions": [
+                "Dispute Resolution",
+                "Criminal Defence",
+                "Corporate & Contracts",
+                "Insolvency & Bankruptcy",
+                "Employment & Labour Law",
+                "Intellectual Property",
+                "Immigration Law",
+                "Family & Private Client",
+                "Start-up Advisory"
+              ],
+              "timeOptions": [
+                "09:00 AM - 10:00 AM",
+                "10:00 AM - 11:00 AM",
+                "11:00 AM - 12:00 PM",
+                "02:00 PM - 03:00 PM",
+                "03:00 PM - 04:00 PM",
+                "04:00 PM - 05:00 PM",
+                "05:00 PM - 06:00 PM"
+              ],
+              "button": "Book Appointment",
+              "sending": "Booking...",
+              "successTitle": "Thank you, {name}!",
+              "success": "Your appointment request has been received. We will confirm it within one business day.",
+              "closeLabel": "Close"
+            }
+          }
+        }
+      },
+      "templateComponents": {
+        "shared": {
+          "Header": "LegalHeader1",
+          "Footer": "common.Footer"
+        },
+        "pages": {
+          "home": {
+            "components": [
+              {
+                "key": "Header",
+                "component": "LegalHeader1"
+              },
+              {
+                "key": "Hero",
+                "component": "LegalHero1"
+              },
+              {
+                "key": "AboutUs",
+                "component": "LegalAboutUs1"
+              },
+              {
+                "key": "WhyChooseUs",
+                "component": "LegalWhyChooseUs1"
+              },
+              {
+                "key": "PracticeAreas",
+                "component": "LegalPracticeAreas1"
+              },
+              {
+                "key": "Team",
+                "component": "LegalTeam1"
+              },
+              {
+                "key": "Cta",
+                "component": "LegalCta1"
+              },
+              {
+                "key": "Contact",
+                "component": "LegalContact1"
+              },
+              {
+                "key": "EnquiryForm",
+                "component": "LegalEnquiryForm1"
+              },
+              {
+                "key": "Footer",
+                "component": "common.Footer"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
